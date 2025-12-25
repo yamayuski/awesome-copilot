@@ -1,40 +1,40 @@
-# 🤖 Awesome GitHub Copilot Customizations
+# 🤖 Awesome GitHub Copilot カスタマイゼーション
 
 [![Powered by Awesome Copilot](https://img.shields.io/badge/Powered_by-Awesome_Copilot-blue?logo=githubcopilot)](https://aka.ms/awesome-github-copilot)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-93-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-A community created collection of custom agents, prompts, and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
+さまざまなドメイン、言語、ユースケースにわたってGitHub Copilotの体験を強化するための、コミュニティが作成したカスタムエージェント、プロンプト、インストラクションのコレクションです。
 
-## 🚀 What is Awesome GitHub Copilot?
+## 🚀 Awesome GitHub Copilotとは？
 
-This repository provides a comprehensive toolkit for enhancing GitHub Copilot with specialized:
+このリポジトリは、GitHub Copilotを以下の特化した機能で強化するための包括的なツールキットを提供します：
 
-- **👉 [Awesome Agents](docs/README.agents.md)** - Specialized GitHub Copilot agents that integrate with MCP servers to provide enhanced capabilities for specific workflows and tools
-- **👉 [Awesome Prompts](docs/README.prompts.md)** - Focused, task-specific prompts for generating code, documentation, and solving specific problems
-- **👉 [Awesome Instructions](docs/README.instructions.md)** - Comprehensive coding standards and best practices that apply to specific file patterns or entire projects
-- **👉 [Awesome Skills](docs/README.skills.md)** - Self-contained folders with instructions and bundled resources that enhance AI capabilities for specialized tasks
-- **👉 [Awesome Collections](docs/README.collections.md)** - Curated collections of related prompts, instructions, and chat modes organized around specific themes and workflows
+- **👉 [Awesome Agents](docs/README.agents.md)** - MCPサーバーと統合し、特定のワークフローやツールのための強化された機能を提供する、特化したGitHub Copilotエージェント
+- **👉 [Awesome Prompts](docs/README.prompts.md)** - コード生成、ドキュメント作成、特定の問題解決のための、焦点を絞ったタスク固有のプロンプト
+- **👉 [Awesome Instructions](docs/README.instructions.md)** - 特定のファイルパターンやプロジェクト全体に適用される、包括的なコーディング標準とベストプラクティス
+- **👉 [Awesome Skills](docs/README.skills.md)** - 特化したタスクのためのAI機能を強化する、インストラクションとバンドルされたリソースを含む自己完結型のフォルダ
+- **👉 [Awesome Collections](docs/README.collections.md)** - 特定のテーマとワークフローを中心に整理された、関連するプロンプト、インストラクション、チャットモードのキュレートされたコレクション
 
-## 🌟 Featured Collections
+## 🌟 注目のコレクション
 
-Discover our curated collections of prompts, instructions, and agents organized around specific themes and workflows.
+特定のテーマとワークフローを中心に整理された、キュレートされたプロンプト、インストラクション、エージェントのコレクションをご覧ください。
 
-| Name | Description | Items | Tags |
+| 名前 | 説明 | アイテム | タグ |
 | ---- | ----------- | ----- | ---- |
-| [Awesome Copilot](collections/awesome-copilot.md) | Meta prompts that help you discover and generate curated GitHub Copilot chat modes, collections, instructions, prompts, and agents. | 6 items | github-copilot, discovery, meta, prompt-engineering, agents |
-| [Partners](collections/partners.md) | Custom agents that have been created by GitHub partners | 20 items | devops, security, database, cloud, infrastructure, observability, feature-flags, cicd, migration, performance |
+| [Awesome Copilot](collections/awesome-copilot.md) | キュレートされたGitHub Copilotチャットモード、コレクション、インストラクション、プロンプト、エージェントの発見と生成を支援するメタプロンプト。 | 6アイテム | github-copilot, discovery, meta, prompt-engineering, agents |
+| [Partners](collections/partners.md) | GitHubパートナーによって作成されたカスタムエージェント | 20アイテム | devops, security, database, cloud, infrastructure, observability, feature-flags, cicd, migration, performance |
 
 
 ## MCP Server
 
-To make it easy to add these customizations to your editor, we have created a [MCP Server](https://developer.microsoft.com/blog/announcing-awesome-copilot-mcp-server) that provides a prompt for searching and installing prompts, instructions, and chat modes directly from this repository. You'll need to have Docker installed and running to run the server.
+これらのカスタマイゼーションをエディタに簡単に追加できるように、このリポジトリから直接プロンプト、インストラクション、チャットモードを検索してインストールするための[MCP Server](https://developer.microsoft.com/blog/announcing-awesome-copilot-mcp-server)を作成しました。サーバーを実行するには、Dockerがインストールされ、実行されている必要があります。
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?logo=visualstudiocode&logoColor=white)](https://aka.ms/awesome-copilot/mcp/vscode) [![Install in VS Code Insiders](https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?logo=visualstudiocode&logoColor=white)](https://aka.ms/awesome-copilot/mcp/vscode-insiders) [![Install in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install-C16FDE?logo=visualstudio&logoColor=white)](https://aka.ms/awesome-copilot/mcp/vs)
 
 <details>
-<summary>Show MCP Server JSON configuration</summary>
+<summary>MCP Server JSON設定を表示</summary>
 
 ```json
 {
@@ -55,79 +55,79 @@ To make it easy to add these customizations to your editor, we have created a [M
 
 </details>
 
-## 🔧 How to Use
+## 🔧 使い方
 
-### 🤖 Custom Agents
+### 🤖 カスタムエージェント
 
-Custom agents can be used in Copilot coding agent (CCA), VS Code, and Copilot CLI (coming soon). For CCA, when assigning an issue to Copilot, select the custom agent from the provided list. In VS Code, you can activate the custom agent in the agents session, alongside built-in agents like Plan and Agent.
+カスタムエージェントは、Copilot coding agent (CCA)、VS Code、およびCopilot CLI（近日公開予定）で使用できます。CCAの場合、Copilotにイシューを割り当てる際に、提供されたリストからカスタムエージェントを選択します。VS Codeでは、PlanやAgentなどの組み込みエージェントと並行して、エージェントセッションでカスタムエージェントをアクティブにできます。
 
-### 🎯 Prompts
+### 🎯 プロンプト
 
-Use the `/` command in GitHub Copilot Chat to access prompts:
+GitHub Copilot Chatで `/` コマンドを使用してプロンプトにアクセスします：
 
 ```plaintext
 /awesome-copilot create-readme
 ```
 
-### 📋 Instructions
+### 📋 インストラクション
 
-Instructions automatically apply to files based on their patterns and provide contextual guidance for coding standards, frameworks, and best practices.
+インストラクションは、パターンに基づいてファイルに自動的に適用され、コーディング標準、フレームワーク、ベストプラクティスのコンテキストに応じたガイダンスを提供します。
 
-## 🎯 Why Use Awesome GitHub Copilot?
+## 🎯 Awesome GitHub Copilotを使う理由
 
-- **Productivity**: Pre-built agents, prompts and instructions save time and provide consistent results.
-- **Best Practices**: Benefit from community-curated coding standards and patterns.
-- **Specialized Assistance**: Access expert-level guidance through specialized custom agents.
-- **Continuous Learning**: Stay updated with the latest patterns and practices across technologies.
+- **生産性**: 事前に構築されたエージェント、プロンプト、インストラクションが時間を節約し、一貫した結果を提供します。
+- **ベストプラクティス**: コミュニティがキュレートしたコーディング標準とパターンから恩恵を受けます。
+- **専門的な支援**: 特化したカスタムエージェントを通じてエキスパートレベルのガイダンスにアクセスします。
+- **継続的な学習**: 技術全体にわたる最新のパターンとプラクティスを常に把握します。
 
-## 🤝 Contributing
+## 🤝 コントリビューション
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
+コントリビューションを歓迎します！以下の方法について詳しくは、[コントリビューションガイドライン](CONTRIBUTING.md)をご覧ください：
 
-- Add new prompts, instructions, or chat modes
-- Improve existing content
-- Report issues or suggest enhancements
+- 新しいプロンプト、インストラクション、またはチャットモードの追加
+- 既存のコンテンツの改善
+- イシューの報告または機能拡張の提案
 
-For AI coding agents working with this project, refer to [AGENTS.md](AGENTS.md) for detailed technical guidance on development workflows, setup commands, and contribution standards.
+このプロジェクトで作業するAIコーディングエージェントについては、開発ワークフロー、セットアップコマンド、コントリビューション標準に関する詳細な技術ガイダンスとして[AGENTS.md](AGENTS.md)を参照してください。
 
-### Quick Contribution Guide
+### クイックコントリビューションガイド
 
-1. Follow our file naming conventions and frontmatter requirements
-2. Test your contributions thoroughly
-3. Update the appropriate README tables
-4. Submit a pull request with a clear description
+1. ファイル命名規則とフロントマター要件に従ってください
+2. コントリビューションを徹底的にテストしてください
+3. 適切なREADMEテーブルを更新してください
+4. 明確な説明とともにプルリクエストを提出してください
 
-## 📖 Repository Structure
+## 📖 リポジトリ構造
 
 ```plaintext
-├── prompts/          # Task-specific prompts (.prompt.md)
-├── instructions/     # Coding standards and best practices (.instructions.md)
-├── agents/           # AI personas and specialized modes (.agent.md)
-├── collections/      # Curated collections of related items (.collection.yml)
-└── scripts/          # Utility scripts for maintenance
+├── prompts/          # タスク固有のプロンプト (.prompt.md)
+├── instructions/     # コーディング標準とベストプラクティス (.instructions.md)
+├── agents/           # AIペルソナと特化したモード (.agent.md)
+├── collections/      # 関連アイテムのキュレートされたコレクション (.collection.yml)
+└── scripts/          # メンテナンス用ユーティリティスクリプト
 ```
 
-## 📄 License
+## 📄 ライセンス
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+このプロジェクトはMITライセンスの下でライセンスされています - 詳細は[LICENSE](LICENSE)ファイルをご覧ください。
 
-## 🛡️ Security & Support
+## 🛡️ セキュリティ＆サポート
 
-- **Security Issues**: Please see our [Security Policy](SECURITY.md)
-- **Support**: Check our [Support Guide](SUPPORT.md) for getting help
-- **Code of Conduct**: We follow the [Contributor Covenant](CODE_OF_CONDUCT.md)
+- **セキュリティイシュー**: [セキュリティポリシー](SECURITY.md)をご覧ください
+- **サポート**: ヘルプを得るには[サポートガイド](SUPPORT.md)をご確認ください
+- **行動規範**: [Contributor Covenant](CODE_OF_CONDUCT.md)に従っています
 
-## ℹ️ Disclaimer
+## ℹ️ 免責事項
 
-The customizations in this repository are sourced from and created by third-party developers. GitHub does not verify, endorse, or guarantee the functionality or security of these agents. Please carefully inspect any agent and its documentation before installing to understand permissions it may require and actions it may perform.
+このリポジトリのカスタマイゼーションは、サードパーティの開発者によって提供され、作成されています。GitHubは、これらのエージェントの機能またはセキュリティを検証、承認、または保証しません。インストールする前に、エージェントとそのドキュメントを注意深く調査して、必要な権限と実行される可能性のあるアクションを理解してください。
 
 ---
 
-**Ready to supercharge your coding experience?** Start exploring our [prompts](docs/README.prompts.md), [instructions](docs/README.instructions.md), and [custom agents](docs/README.agents.md)!
+**コーディング体験を強化する準備はできましたか？** [プロンプト](docs/README.prompts.md)、[インストラクション](docs/README.instructions.md)、[カスタムエージェント](docs/README.agents.md)を探索してみましょう！
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+以下の素晴らしい方々に感謝します（[絵文字キー](https://allcontributors.org/docs/en/emoji-key)）：
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -272,19 +272,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+このプロジェクトは[all-contributors](https://github.com/all-contributors/all-contributors)仕様に従っています。あらゆる種類のコントリビューションを歓迎します！
 
-## 📚 Additional Resources
+## 📚 追加リソース
 
-- [VS Code Copilot Customization Documentation](https://code.visualstudio.com/docs/copilot/copilot-customization) - Official Microsoft documentation
-- [GitHub Copilot Chat Documentation](https://code.visualstudio.com/docs/copilot/chat/copilot-chat) - Complete chat feature guide
-- [Custom Chat Modes](https://code.visualstudio.com/docs/copilot/chat/chat-modes) - Advanced chat configuration
-- [VS Code Settings](https://code.visualstudio.com/docs/getstarted/settings) - General VS Code configuration guide
+- [VS Code Copilotカスタマイゼーションドキュメント](https://code.visualstudio.com/docs/copilot/copilot-customization) - Microsoft公式ドキュメント
+- [GitHub Copilot Chatドキュメント](https://code.visualstudio.com/docs/copilot/chat/copilot-chat) - 完全なチャット機能ガイド
+- [カスタムチャットモード](https://code.visualstudio.com/docs/copilot/chat/chat-modes) - 高度なチャット設定
+- [VS Code設定](https://code.visualstudio.com/docs/getstarted/settings) - 一般的なVS Code設定ガイド
 
-## ™️ Trademarks
+## ™️ 商標
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
-trademarks or logos is subject to and must follow
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+このプロジェクトには、プロジェクト、製品、またはサービスの商標またはロゴが含まれている場合があります。Microsoftの商標またはロゴの承認された使用は、[Microsoftの商標およびブランドガイドライン](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general)に従う必要があります。このプロジェクトの修正版でのMicrosoftの商標またはロゴの使用は、混乱を引き起こしたり、Microsoftのスポンサーシップを示唆したりしてはなりません。サードパーティの商標またはロゴの使用は、それらのサードパーティのポリシーに従います。

@@ -1,133 +1,133 @@
-# Contributing to Awesome GitHub Copilot
+# Awesome GitHub Copilotへのコントリビューション
 
-Thank you for your interest in contributing to the Awesome GitHub Copilot repository! We welcome contributions from the community to help expand our collection of custom instructions and prompts.
+Awesome GitHub Copilotリポジトリへの貢献にご興味をお持ちいただき、ありがとうございます！カスタムインストラクションとプロンプトのコレクションを拡大するために、コミュニティからのコントリビューションを歓迎します。
 
-## How to Contribute
+## コントリビューション方法
 
-### Adding Instructions
+### インストラクションの追加
 
-Instructions help customize GitHub Copilot's behavior for specific technologies, coding practices, or domains.
+インストラクションは、特定の技術、コーディングプラクティス、またはドメインに対してGitHub Copilotの動作をカスタマイズするのに役立ちます。
 
-1. **Create your instruction file**: Add a new `.md` file in the `instructions/` directory
-2. **Follow the naming convention**: Use descriptive, lowercase filenames with hyphens (e.g., `python-django.instructions.md`)
-3. **Structure your content**: Start with a clear heading and organize your instructions logically
-4. **Test your instructions**: Make sure your instructions work well with GitHub Copilot
+1. **インストラクションファイルを作成**: `instructions/`ディレクトリに新しい`.md`ファイルを追加します
+2. **命名規則に従う**: ハイフン区切りの小文字の説明的なファイル名を使用します（例：`python-django.instructions.md`）
+3. **コンテンツを構造化**: 明確な見出しで始め、インストラクションを論理的に整理します
+4. **インストラクションをテスト**: インストラクションがGitHub Copilotで適切に機能することを確認します
 
-#### Example instruction format
+#### インストラクション形式の例
 
 ```markdown
 ---
-description: 'Instructions for customizing GitHub Copilot behavior for specific technologies and practices'
+description: '特定の技術とプラクティスのためにGitHub Copilotの動作をカスタマイズするためのインストラクション'
 ---
 
-# Your Technology/Framework Name
+# あなたの技術/フレームワーク名
 
-## Instructions
+## インストラクション
 
-- Provide clear, specific guidance for GitHub Copilot
-- Include best practices and conventions
-- Use bullet points for easy reading
+- GitHub Copilotのための明確で具体的なガイダンスを提供
+- ベストプラクティスと規則を含める
+- 読みやすいように箇条書きを使用
 
-## Additional Guidelines
+## 追加ガイドライン
 
-- Any additional context or examples
+- 追加のコンテキストまたは例
 ```
 
-### Adding Prompts
+### プロンプトの追加
 
-Prompts are ready-to-use templates for specific development scenarios and tasks.
+プロンプトは、特定の開発シナリオとタスクのための即座に使用可能なテンプレートです。
 
-1. **Create your prompt file**: Add a new `.prompt.md` file in the `prompts/` directory
-2. **Follow the naming convention**: Use descriptive, lowercase filenames with hyphens and the `.prompt.md` extension (e.g., `react-component-generator.prompt.md`)
-3. **Include frontmatter**: Add metadata at the top of your file (optional but recommended)
-4. **Structure your prompt**: Provide clear context and specific instructions
+1. **プロンプトファイルを作成**: `prompts/`ディレクトリに新しい`.prompt.md`ファイルを追加します
+2. **命名規則に従う**: ハイフン区切りの小文字の説明的なファイル名と`.prompt.md`拡張子を使用します（例：`react-component-generator.prompt.md`）
+3. **フロントマターを含める**: ファイルの先頭にメタデータを追加します（オプションですが推奨）
+4. **プロンプトを構造化**: 明確なコンテキストと具体的な指示を提供します
 
-#### Example prompt format
+#### プロンプト形式の例
 
 ```markdown
 ---
 agent: 'agent'
 tools: ['codebase', 'terminalCommand']
-description: 'Brief description of what this prompt does'
+description: 'このプロンプトが何をするかの簡単な説明'
 ---
 
-# Prompt Title
+# プロンプトタイトル
 
-Your goal is to...
+あなたの目標は...
 
-## Specific Instructions
+## 具体的な指示
 
-- Clear, actionable instructions
-- Include examples where helpful
+- 明確で実行可能な指示
+- 役立つ場合は例を含める
 ```
 
-### Adding Chat Modes
+### チャットモードの追加
 
-Chat modes are specialized configurations that transform GitHub Copilot Chat into domain-specific assistants or personas for particular development scenarios.
+チャットモードは、GitHub Copilot Chatを特定の開発シナリオのためのドメイン固有のアシスタントまたはペルソナに変換する特化した設定です。
 
-1. **Create your chat mode file**: Add a new `.agent.md` file in the `agents/` directory
-2. **Follow the naming convention**: Use descriptive, lowercase filenames with hyphens and the `.agent.md` extension (e.g., `react-performance-expert.agent.md`)
-3. **Include frontmatter**: Add metadata at the top of your file with required fields
-4. **Define the persona**: Create a clear identity and expertise area for the chat mode
-5. **Test your chat mode**: Ensure the chat mode provides helpful, accurate responses in its domain
+1. **チャットモードファイルを作成**: `agents/`ディレクトリに新しい`.agent.md`ファイルを追加します
+2. **命名規則に従う**: ハイフン区切りの小文字の説明的なファイル名と`.agent.md`拡張子を使用します（例：`react-performance-expert.agent.md`）
+3. **フロントマターを含める**: 必須フィールドを含むメタデータをファイルの先頭に追加します
+4. **ペルソナを定義**: チャットモードの明確なアイデンティティと専門分野を作成します
+5. **チャットモードをテスト**: チャットモードがそのドメインで役立つ、正確な応答を提供することを確認します
 
-#### Example chat mode format
+#### チャットモード形式の例
 
 ```markdown
 ---
-description: 'Brief description of the chat mode and its purpose'
+description: 'チャットモードとその目的の簡単な説明'
 model: 'gpt-5'
 tools: ['codebase', 'terminalCommand']
 ---
 
-# Chat Mode Title
+# チャットモードタイトル
 
-You are an expert [domain/role] with deep knowledge in [specific areas].
+あなたは[特定の分野]に深い知識を持つ[ドメイン/役割]のエキスパートです。
 
-## Your Expertise
+## あなたの専門知識
 
-- [Specific skill 1]
-- [Specific skill 2]
-- [Specific skill 3]
+- [特定のスキル1]
+- [特定のスキル2]
+- [特定のスキル3]
 
-## Your Approach
+## あなたのアプローチ
 
-- [How you help users]
-- [Your communication style]
-- [What you prioritize]
+- [ユーザーをどのように支援するか]
+- [あなたのコミュニケーションスタイル]
+- [あなたが優先すること]
 
-## Guidelines
+## ガイドライン
 
-- [Specific instructions for responses]
-- [Constraints or limitations]
-- [Best practices to follow]
+- [応答のための具体的な指示]
+- [制約または制限]
+- [従うべきベストプラクティス]
 ```
 
-### Adding Collections
+### コレクションの追加
 
-Collections group related prompts, instructions, and chat modes around specific themes or workflows, making it easier for users to discover and adopt comprehensive toolkits.
+コレクションは、特定のテーマやワークフローを中心に関連するプロンプト、インストラクション、チャットモードをグループ化し、ユーザーが包括的なツールキットを発見して採用しやすくします。
 
-1. **Create your collection manifest**: Add a new `.collection.yml` file in the `collections/` directory
-2. **Follow the naming convention**: Use descriptive, lowercase filenames with hyphens (e.g., `python-web-development.collection.yml`)
-3. **Reference existing items**: Collections should only reference files that already exist in the repository
-4. **Test your collection**: Verify all referenced files exist and work well together
+1. **コレクションマニフェストを作成**: `collections/`ディレクトリに新しい`.collection.yml`ファイルを追加します
+2. **命名規則に従う**: ハイフン区切りの小文字の説明的なファイル名を使用します（例：`python-web-development.collection.yml`）
+3. **既存のアイテムを参照**: コレクションはリポジトリに既に存在するファイルのみを参照する必要があります
+4. **コレクションをテスト**: 参照されているすべてのファイルが存在し、うまく連携することを確認します
 
-#### Creating a collection
+#### コレクションの作成
 
 ```bash
-# Using the creation script
+# 作成スクリプトを使用
 node create-collection.js my-collection-id
 
-# Or using VS Code Task: Ctrl+Shift+P > "Tasks: Run Task" > "create-collection"
+# またはVS Codeタスクを使用: Ctrl+Shift+P > "Tasks: Run Task" > "create-collection"
 ```
 
-#### Example collection format
+#### コレクション形式の例
 
 ```yaml
 id: my-collection-id
-name: My Collection Name
-description: A brief description of what this collection provides and who should use it.
-tags: [tag1, tag2, tag3] # Optional discovery tags
+name: マイコレクション名
+description: このコレクションが提供するものと、誰が使用すべきかの簡単な説明。
+tags: [tag1, tag2, tag3] # オプションの発見タグ
 items:
   - path: prompts/my-prompt.prompt.md
     kind: prompt
@@ -136,115 +136,115 @@ items:
   - path: agents/my-chatmode.agent.md
     kind: agent
     usage: |
-     recommended # or "optional" if not essential to the workflow
+     recommended # またはワークフローに必須でない場合は"optional"
 
-     This chat mode requires the following instructions/prompts/MCPs:
-      - Instruction 1
-      - Prompt 1
+     このチャットモードには以下のインストラクション/プロンプト/MCPが必要です：
+      - インストラクション1
+      - プロンプト1
       - MCP 1
 
-     This chat mode is ideal for...
-      - Use case 1
-      - Use case 2
+     このチャットモードは以下に最適です...
+      - ユースケース1
+      - ユースケース2
     
-      Here is an example of how to use it:
+      使用方法の例は次のとおりです：
       ```markdown, task-plan.prompt.md
       ---
       mode: task-planner
       title: Plan microsoft fabric realtime intelligence terraform support
       ---
-      #file: <file including in chat context>
-      Do an action to achieve goal.
+      #file: <チャットコンテキストに含まれるファイル>
+      目標を達成するためのアクションを実行します。
       ```
 
-      To get the best results, consider...
-      - Tip 1
-      - Tip 2
+      最良の結果を得るには、以下を考慮してください...
+      - ヒント1
+      - ヒント2
     
 display:
-  ordering: alpha # or "manual" to preserve order above
-  show_badge: false # set to true to show collection badge
+  ordering: alpha # または上記の順序を保持するには"manual"
+  show_badge: false # コレクションバッジを表示する場合はtrueに設定
 ```
 
-For full example of usage checkout edge-ai tasks collection:
+usageの完全な例については、edge-ai tasksコレクションを確認してください：
 - [edge-ai-tasks.collection.yml](./collections/edge-ai-tasks.collection.yml)
 - [edge-ai-tasks.md](./collections/edge-ai-tasks.md)
 
-#### Collection Guidelines
+#### コレクションガイドライン
 
-- **Focus on workflows**: Group items that work together for specific use cases
-- **Reasonable size**: Typically 3-10 items work well
-- **Test combinations**: Ensure the items complement each other effectively
-- **Clear purpose**: The collection should solve a specific problem or workflow
-- **Validate before submitting**: Run `node validate-collections.js` to ensure your manifest is valid
+- **ワークフローに焦点を当てる**: 特定のユースケースのために連携するアイテムをグループ化します
+- **適切なサイズ**: 通常、3〜10アイテムがうまく機能します
+- **組み合わせをテスト**: アイテムが効果的に補完し合うことを確認します
+- **明確な目的**: コレクションは特定の問題またはワークフローを解決する必要があります
+- **提出前に検証**: `node validate-collections.js`を実行してマニフェストが有効であることを確認します
 
-## Submitting Your Contribution
+## コントリビューションの提出
 
-1. **Fork this repository**
-2. **Create a new branch** for your contribution
-3. **Add your instruction, prompt file, chatmode, or collection** following the guidelines above
-4. **Run the update script**: `npm start` to update the README with your new file (make sure you run `npm install` first if you haven't already)
-   - A GitHub Actions workflow will verify that this step was performed correctly
-   - If the README.md would be modified by running the script, the PR check will fail with a comment showing the required changes
-5. **Submit a pull request** with:
-   - A clear title describing your contribution
-   - A brief description of what your instruction/prompt does
-   - Any relevant context or usage notes
+1. **このリポジトリをフォーク**
+2. **コントリビューション用の新しいブランチを作成**
+3. **上記のガイドラインに従って、インストラクション、プロンプトファイル、チャットモード、またはコレクションを追加**
+4. **更新スクリプトを実行**: `npm start`を実行して、新しいファイルでREADMEを更新します（まだ実行していない場合は、まず`npm install`を実行してください）
+   - GitHub Actionsワークフローがこのステップが正しく実行されたことを検証します
+   - スクリプトを実行することでREADME.mdが変更される場合、PRチェックは必要な変更を示すコメントとともに失敗します
+5. **プルリクエストを提出**：以下を含めてください
+   - コントリビューションを説明する明確なタイトル
+   - インストラクション/プロンプトが何をするかの簡単な説明
+   - 関連するコンテキストまたは使用上の注意
 
-**Note**: Once your contribution is merged, you'll automatically be added to our [Contributors](./README.md#contributors-) section! We use [all-contributors](https://github.com/all-contributors/all-contributors) to recognize all types of contributions to the project.
+**注意**: コントリビューションがマージされると、自動的に[コントリビューター](./README.md#contributors-)セクションに追加されます！プロジェクトへのあらゆる種類のコントリビューションを認識するために、[all-contributors](https://github.com/all-contributors/all-contributors)を使用しています。
 
-## What We Accept
+## 受け入れるもの
 
-We welcome contributions covering any technology, framework, or development practice that helps developers work more effectively with GitHub Copilot. This includes:
+GitHub Copilotで開発者がより効果的に作業するのに役立つ、あらゆる技術、フレームワーク、または開発プラクティスをカバーするコントリビューションを歓迎します。これには以下が含まれます：
 
-- Programming languages and frameworks
-- Development methodologies and best practices
-- Architecture patterns and design principles
-- Testing strategies and quality assurance
-- DevOps and deployment practices
-- Accessibility and inclusive design
-- Performance optimization techniques
+- プログラミング言語とフレームワーク
+- 開発方法論とベストプラクティス
+- アーキテクチャパターンと設計原則
+- テスト戦略と品質保証
+- DevOpsとデプロイメントプラクティス
+- アクセシビリティとインクルーシブデザイン
+- パフォーマンス最適化技術
 
-## What We Don't Accept
+## 受け入れないもの
 
-To maintain a safe, responsible, and constructive community, we will **not accept** contributions that:
+安全で責任があり、建設的なコミュニティを維持するために、以下のコントリビューションは**受け入れません**：
 
-- **Violate Responsible AI Principles**: Content that attempts to circumvent Microsoft/GitHub's Responsible AI guidelines or promotes harmful AI usage
-- **Compromise Security**: Instructions designed to bypass security policies, exploit vulnerabilities, or weaken system security
-- **Enable Malicious Activities**: Content intended to harm other systems, users, or organizations
-- **Exploit Weaknesses**: Instructions that take advantage of vulnerabilities in other platforms or services
-- **Promote Harmful Content**: Guidance that could lead to the creation of harmful, discriminatory, or inappropriate content
-- **Circumvent Platform Policies**: Attempts to work around GitHub, Microsoft, or other platform terms of service
+- **責任あるAI原則に違反**: Microsoft/GitHubの責任あるAIガイドラインを回避しようとするコンテンツ、または有害なAI使用を促進するもの
+- **セキュリティを侵害**: セキュリティポリシーをバイパスし、脆弱性を悪用し、またはシステムセキュリティを弱めるように設計されたインストラクション
+- **悪意のある活動を可能にする**: 他のシステム、ユーザー、または組織に害を与えることを意図したコンテンツ
+- **弱点を悪用**: 他のプラットフォームまたはサービスの脆弱性を利用するインストラクション
+- **有害なコンテンツを促進**: 有害、差別的、または不適切なコンテンツの作成につながる可能性のあるガイダンス
+- **プラットフォームポリシーを回避**: GitHub、Microsoft、または他のプラットフォームの利用規約を回避しようとする試み
 
-## Quality Guidelines
+## 品質ガイドライン
 
-- **Be specific**: Generic instructions are less helpful than specific, actionable guidance
-- **Test your content**: Ensure your instructions or prompts work well with GitHub Copilot
-- **Follow conventions**: Use consistent formatting and naming
-- **Keep it focused**: Each file should address a specific technology, framework, or use case
-- **Write clearly**: Use simple, direct language
-- **Promote best practices**: Encourage secure, maintainable, and ethical development practices
+- **具体的に**: 一般的なインストラクションは、具体的で実行可能なガイダンスよりも役に立ちません
+- **コンテンツをテスト**: インストラクションまたはプロンプトがGitHub Copilotで適切に機能することを確認します
+- **規則に従う**: 一貫した書式設定と命名を使用します
+- **焦点を絞る**: 各ファイルは特定の技術、フレームワーク、またはユースケースに対処する必要があります
+- **明確に書く**: シンプルで直接的な言語を使用します
+- **ベストプラクティスを促進**: 安全で保守可能で倫理的な開発プラクティスを奨励します
 
-## Contributors Recognition
+## コントリビューターの認識
 
-This project uses [all-contributors](https://github.com/all-contributors/all-contributors) to recognize contributors. When you make a contribution, you'll automatically be recognized in our contributors list!
+このプロジェクトは、コントリビューターを認識するために[all-contributors](https://github.com/all-contributors/all-contributors)を使用しています。コントリビューションを行うと、コントリビューターリストに自動的に認識されます！
 
-We welcome contributions of all types, including:
+以下を含む、あらゆる種類のコントリビューションを歓迎します：
 
-- 📝 Documentation improvements
-- 💻 Code contributions
-- 🐛 Bug reports and fixes
-- 🎨 Design improvements
-- 💡 Ideas and suggestions
-- 🤔 Answering questions
-- 📢 Promoting the project
+- 📝 ドキュメントの改善
+- 💻 コードのコントリビューション
+- 🐛 バグレポートと修正
+- 🎨 デザインの改善
+- 💡 アイデアと提案
+- 🤔 質問への回答
+- 📢 プロジェクトの宣伝
 
-Your contributions help make this resource better for the entire GitHub Copilot community!
+あなたのコントリビューションは、GitHub Copilotコミュニティ全体にとってこのリソースをより良いものにするのに役立ちます！
 
-## Code of Conduct
+## 行動規範
 
-Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+このプロジェクトは[コントリビューター行動規範](CODE_OF_CONDUCT.md)とともにリリースされていることに注意してください。このプロジェクトに参加することで、その条件に従うことに同意します。
 
-## License
+## ライセンス
 
-By contributing to this repository, you agree that your contributions will be licensed under the MIT License.
+このリポジトリにコントリビューションすることで、あなたのコントリビューションがMITライセンスの下でライセンスされることに同意します。

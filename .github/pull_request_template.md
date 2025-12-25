@@ -1,35 +1,35 @@
-## Pull Request Checklist
+## プルリクエストチェックリスト
 
-- [ ] I have read and followed the [CONTRIBUTING.md](https://github.com/github/awesome-copilot/blob/main/CONTRIBUTING.md) guidelines.
-- [ ] My contribution adds a new instruction, prompt, or chat mode file in the correct directory.
-- [ ] The file follows the required naming convention.
-- [ ] The content is clearly structured and follows the example format.
-- [ ] I have tested my instructions, prompt, or chat mode with GitHub Copilot.
-- [ ] I have run `npm start` and verified that `README.md` is up to date.
-
----
-
-## Description
-
-<!-- Briefly describe your contribution and its purpose. Include any relevant context or usage notes. -->
+- [ ] [CONTRIBUTING.md](https://github.com/github/awesome-copilot/blob/main/CONTRIBUTING.md)ガイドラインを読んで従いました。
+- [ ] 私のコントリビューションは、正しいディレクトリに新しいインストラクション、プロンプト、またはチャットモードファイルを追加します。
+- [ ] ファイルは必要な命名規則に従っています。
+- [ ] コンテンツは明確に構造化されており、例の形式に従っています。
+- [ ] インストラクション、プロンプト、またはチャットモードをGitHub Copilotでテストしました。
+- [ ] `npm start`を実行し、`README.md`が最新であることを確認しました。
 
 ---
 
-## Type of Contribution
+## 説明
 
-- [ ] New instruction file.
-- [ ] New prompt file.
-- [ ] New chat mode file.
-- [ ] New collection file.
-- [ ] Update to existing instruction, prompt, chat mode, or collection.
-- [ ] Other (please specify):
+<!-- コントリビューションとその目的を簡単に説明してください。関連するコンテキストまたは使用上の注意を含めてください。 -->
 
 ---
 
-## Additional Notes
+## コントリビューションのタイプ
 
-<!-- Add any additional information or context for reviewers here. -->
+- [ ] 新しいインストラクションファイル。
+- [ ] 新しいプロンプトファイル。
+- [ ] 新しいチャットモードファイル。
+- [ ] 新しいコレクションファイル。
+- [ ] 既存のインストラクション、プロンプト、チャットモード、またはコレクションの更新。
+- [ ] その他（指定してください）：
 
 ---
 
-By submitting this pull request, I confirm that my contribution abides by the [Code of Conduct](../CODE_OF_CONDUCT.md) and will be licensed under the MIT License.
+## 追加メモ
+
+<!-- レビュアーのための追加情報またはコンテキストをここに追加してください。 -->
+
+---
+
+このプルリクエストを提出することにより、私のコントリビューションが[行動規範](../CODE_OF_CONDUCT.md)に従い、MITライセンスの下でライセンスされることを確認します。
