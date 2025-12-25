@@ -1,52 +1,52 @@
 # AGENTS.md
 
-## Project Overview
+## プロジェクト概要
 
-The Awesome GitHub Copilot repository is a community-driven collection of custom agents, prompts, and instructions designed to enhance GitHub Copilot experiences across various domains, languages, and use cases. The project includes:
+Awesome GitHub Copilotリポジトリは、さまざまなドメイン、言語、ユースケースにわたってGitHub Copilot体験を強化するために設計された、カスタムエージェント、プロンプト、インストラクションのコミュニティ主導のコレクションです。プロジェクトには以下が含まれます：
 
-- **Agents** - Specialized GitHub Copilot agents that integrate with MCP servers
-- **Prompts** - Task-specific prompts for code generation and problem-solving
-- **Instructions** - Coding standards and best practices applied to specific file patterns
-- **Skills** - Self-contained folders with instructions and bundled resources for specialized tasks
-- **Collections** - Curated collections organized around specific themes and workflows
+- **Agents（エージェント）** - MCPサーバーと統合する特化したGitHub Copilotエージェント
+- **Prompts（プロンプト）** - コード生成と問題解決のためのタスク固有のプロンプト
+- **Instructions（インストラクション）** - 特定のファイルパターンに適用されるコーディング標準とベストプラクティス
+- **Skills（スキル）** - 特化したタスクのためのインストラクションとバンドルされたリソースを含む自己完結型のフォルダ
+- **Collections（コレクション）** - 特定のテーマとワークフローを中心に整理されたキュレートされたコレクション
 
-## Repository Structure
+## リポジトリ構造
 
 ```
 .
-├── agents/           # Custom GitHub Copilot agent definitions (.agent.md files)
-├── prompts/          # Task-specific prompts (.prompt.md files)
-├── instructions/     # Coding standards and guidelines (.instructions.md files)
-├── skills/           # Agent Skills folders (each with SKILL.md and optional bundled assets)
-├── collections/      # Curated collections of resources (.md files)
-├── docs/             # Documentation for different resource types
-├── eng/              # Build and automation scripts
-└── scripts/          # Utility scripts
+├── agents/           # カスタムGitHub Copilotエージェント定義（.agent.mdファイル）
+├── prompts/          # タスク固有のプロンプト（.prompt.mdファイル）
+├── instructions/     # コーディング標準とガイドライン（.instructions.mdファイル）
+├── skills/           # エージェントスキルフォルダ（それぞれSKILL.mdとオプションのバンドルされたアセット）
+├── collections/      # リソースのキュレートされたコレクション（.mdファイル）
+├── docs/             # 異なるリソースタイプのドキュメント
+├── eng/              # ビルドと自動化スクリプト
+└── scripts/          # ユーティリティスクリプト
 ```
 
-## Setup Commands
+## セットアップコマンド
 
 ```bash
-# Install dependencies
+# 依存関係をインストール
 npm ci
 
-# Build the project (generates README.md)
+# プロジェクトをビルド（README.mdを生成）
 npm run build
 
-# Validate collection manifests
+# コレクションマニフェストを検証
 npm run collection:validate
 
-# Create a new collection
+# 新しいコレクションを作成
 npm run collection:create -- --id <collection-id> --tags <tags>
 
-# Validate agent skills
+# エージェントスキルを検証
 npm run skill:validate
 
-# Create a new skill
+# 新しいスキルを作成
 npm run skill:create -- --name <skill-name>
 ```
 
-## Development Workflow
+## 開発ワークフロー
 
 ### Working with Agents, Prompts, Instructions, and Skills
 
