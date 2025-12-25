@@ -1,17 +1,17 @@
-# Contributing to Awesome GitHub Copilot
+# Awesome GitHub Copilotへのコントリビューション
 
-Thank you for your interest in contributing to the Awesome GitHub Copilot repository! We welcome contributions from the community to help expand our collection of custom instructions and prompts.
+Awesome GitHub Copilotリポジトリへの貢献にご興味をお持ちいただき、ありがとうございます！カスタムインストラクションとプロンプトのコレクションを拡大するために、コミュニティからのコントリビューションを歓迎します。
 
-## How to Contribute
+## コントリビューション方法
 
-### Adding Instructions
+### インストラクションの追加
 
-Instructions help customize GitHub Copilot's behavior for specific technologies, coding practices, or domains.
+インストラクションは、特定の技術、コーディングプラクティス、またはドメインに対してGitHub Copilotの動作をカスタマイズするのに役立ちます。
 
-1. **Create your instruction file**: Add a new `.md` file in the `instructions/` directory
-2. **Follow the naming convention**: Use descriptive, lowercase filenames with hyphens (e.g., `python-django.instructions.md`)
-3. **Structure your content**: Start with a clear heading and organize your instructions logically
-4. **Test your instructions**: Make sure your instructions work well with GitHub Copilot
+1. **インストラクションファイルを作成**: `instructions/`ディレクトリに新しい`.md`ファイルを追加します
+2. **命名規則に従う**: ハイフン区切りの小文字の説明的なファイル名を使用します（例：`python-django.instructions.md`）
+3. **コンテンツを構造化**: 明確な見出しで始め、インストラクションを論理的に整理します
+4. **インストラクションをテスト**: インストラクションがGitHub Copilotで適切に機能することを確認します
 
 #### Example instruction format
 
